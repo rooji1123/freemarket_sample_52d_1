@@ -1,24 +1,136 @@
+
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## usersテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
 
-Things you may want to cover:
+## user_informationsテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
 
-* Ruby version
+## user_addressテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
 
-* System dependencies
+## credit_cardsテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
 
-* Configuration
+## pointsテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+## productsテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
 
-* Services (job queues, cache servers, search engines, etc.)
+## overviewsテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
 
-* Deployment instructions
+## imagesテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
 
-* ...
+## detailsテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
+
+## categoriesテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
+
+## deliveriesテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
+
+## delivery_burdensテーブル (負担)
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
+
+## delivery_methodsテーブル (方法)
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
+
+## delivery_regionテーブル (地域)
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
+
+## delivery_to_days
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
+
+
+## commentsテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
+
+## messagesテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
+
+
+## brandsテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
+
+
+
+
