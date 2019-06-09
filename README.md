@@ -178,7 +178,6 @@ has_many :massages
 
 belongs_to :purchaseds
 
-
 ## brandsテーブル
 |Column|Type|Options|
 |------|-----|------|
@@ -186,7 +185,31 @@ belongs_to :purchaseds
 ||||
 ||||
 
+has_many :中間テーブル
+has_many :brand_categorys, through: :中間テーブル
 belongs_to :products
+
+## brand_categorysテーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
+
+has_many :中間テーブル
+has_many :brands, through: :中間テーブル
+belongs_to :products
+
+## 中間テーブル
+|Column|Type|Options|
+|------|-----|------|
+||||
+||||
+||||
+
+belongs_to :brands
+belongs_to :brand_categrys
+
 
 
 
