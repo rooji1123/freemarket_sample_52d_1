@@ -10,7 +10,7 @@
 
 has_many :points
 has_many :comments
-has_many :products
+has_many :items
 has_many :purchaseds
 
 ## user_informationsテーブル
@@ -56,7 +56,7 @@ belongs_to :user
 
 belongs_to :user
 
-## productsテーブル
+## itemsテーブル
 |Column|Type|Options|
 |------|-----|------|
 |name|string|null_false|
@@ -71,9 +71,9 @@ belongs_to :brand
 ## overviewsテーブル（概要）
 |Column|Type|Options|
 |------|-----|------|
-|product|references|foreign_key: true, null:false|
+|item|references|foreign_key: true, null:false|
 
-belongs_to :products
+belongs_to :items
 has_many :images
 
 
@@ -88,10 +88,10 @@ belongs_to :images
 ## detailsテーブル（詳細）
 |Column|Type|Options|
 |------|-----|------|
-|product|references|foreign_key: true, null:false|
+|item|references|foreign_key: true, null:false|
 |category|references|foreign_key: true, null:false|
 
-belongs_to :product
+belongs_to :item
 belongs_to :category
 
 ## categorysテーブル
@@ -111,28 +111,28 @@ has_ancestry
 |method|string|null:false|
 |region|string|null:false|
 |day|string|null:false|
-|product|references|foreign_key: true, null:false|
+|item|references|foreign_key: true, null:false|
 
 ## commentsテーブル
 |Column|Type|Options|
 |------|-----|------|
 |comment|text|null:false|
 |user|references|foreign_key: true, null:false|
-|product|references|foreign_key: true, null:false|
+|item|references|foreign_key: true, null:false|
 
 belongs_to :user
-belongs_to :product
+belongs_to :item
 
 ## purchaseds (購入済みテーブル)
 |Column|Type|Options|
 |------|-----|------|
-|product|references|foreign_key: true, null:false|
+|item|references|foreign_key: true, null:false|
 |seller_id|references|foreign_key: true, null:false|
 |buyer_id|references|foreign_key: true, null:false|
 
 has_many :messages
 belongs_to :user
-belongs_to :product
+belongs_to :item
 
 ## messagesテーブル (購入した後の連絡用)
 |Column|Type|Options|
@@ -149,7 +149,7 @@ belongs_to :purchaseds
 
 has_many :brand_module
 has_many :brand_categorys, through: :brand_module
-has_many :products
+has_many :items
 
 ## brand_categorysテーブル
 |Column|Type|Options|
